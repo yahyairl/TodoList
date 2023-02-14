@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         addButton.setOnClickListener {
             data.add(Tache("new tache"))
+            println("bonjour")
             adapter.notifyDataSetChanged()
             Toast.makeText(this@MainActivity, "Ajout!", Toast.LENGTH_LONG).show()
         }
