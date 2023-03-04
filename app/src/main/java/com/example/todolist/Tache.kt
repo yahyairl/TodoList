@@ -1,5 +1,12 @@
 package com.example.todolist
 
 data class Tache(
-    val nomTache : String
-)
+    var nomTache : String,
+    var isFinished: Boolean,
+
+) {
+    companion object {
+        var MY_VARIABLE = 0
+    }
+}
+
